@@ -2,7 +2,7 @@
 
 ##Chrome extension to make blue balls becomes green for Jenkins
 
-[Logo](https://raw.githubusercontent.com/cyrilgandon/jenkins-greenballs-chrome-extension/master/images/48x48/green.png)
+![Logo](https://raw.githubusercontent.com/cyrilgandon/jenkins-greenballs-chrome-extension/master/images/48x48/green.png)
 
 A plugin for Jenkins already exist : 
  - [@Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Green+Balls)
