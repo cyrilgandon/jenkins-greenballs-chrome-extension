@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Jenkins greenballs",
+  "description": "Replace blueballs of Jenkins by green balls",
+  "version": "1.0",
+
+  "icons": { "16": "images/16x16/green.png",
+             "48": "images/48x48/green.png",
+             "128": "images/48x48/green.png" },
+  
+  "browser_action": {
+    "default_icon": "images/32x32/green.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  
+  "content_scripts": [{
+      "matches": ["http://*/*"],
+      "js": ["jquery-2.1.3.min.js", "greenballs.js"],
+	  "css": ["greenballs.css"],
+	  "run_at" : "document_start"
+    }],
+  
+	"web_accessible_resources": [
+		"images/*"
+	]
+  
+}
