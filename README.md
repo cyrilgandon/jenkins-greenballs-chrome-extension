@@ -2,7 +2,7 @@
 
 ##Chrome extension to make blue balls becomes green for Jenkins
 
-[Logo](https://github.com/cyrilgandon/jenkins-greenballs-chrome-extension/blob/master/images/48x48/green.png)
+[Logo](https://raw.githubusercontent.com/cyrilgandon/jenkins-greenballs-chrome-extension/master/images/48x48/green.png)
 
 A plugin for Jenkins already exist : 
  - [@Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Green+Balls)
@@ -18,6 +18,7 @@ All images was taken from the Green Balls Jenkins plugin.
 ## [Why does Jenkins have blue balls?](http://jenkins-ci.org/content/why-does-jenkins-have-blue-balls)
 
 Submitted by [rtyler](http://jenkins-ci.org/users/rtyler) on Tue, 2012-03-13 08:00 
+
 A japanese traffic light It is interesting having an open source project that is sufficiently old to start generating "lore" of some form or another. Jenkins is starting to get to be that age, having been started over 6 years ago.
 
 One of the most commonly asked questions, is about Jenkins' use of "blue balls" to indicate success by default. This is enough of an "issue" for some users that the [Green Balls](https://wiki.jenkins-ci.org/display/JENKINS/Green+Balls) plugin is in the [list of top 10 installed plugins](http://imod.github.io/jenkins-stats/svg/201201-top-plugins1000.svg).
