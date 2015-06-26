@@ -12,23 +12,25 @@ function changeSrcsImagesOfElement(element) {
 function changeSrcIfNeeded(img) {
     if (typeof img !== "undefined" && typeof img.getAttribute !== "undefined") {
         var src = img.getAttribute("src");
-        if( src.indexOf("blue.png") > -1 ) {
-            var sizeIndex;
-            var imgUrl;
-            
-            for(sizeIndex = 0; sizeIndex < sizes.length; sizeIndex++) {
-                var size = sizes[sizeIndex];
-                if( src.indexOf(size) > -1 ) {
-                    imgUrl = chrome.extension.getURL("images/" + size + "/green.png");
+		if(src !== null) {
+            if( src.indexOf("blue.png") > -1 ) {
+                var sizeIndex;
+                var imgUrl;
+                
+                for(sizeIndex = 0; sizeIndex < sizes.length; sizeIndex++) {
+                    var size = sizes[sizeIndex];
+                    if( src.indexOf(size) > -1 ) {
+                        imgUrl = chrome.extension.getURL("images/" + size + "/green.png");
+                    }
                 }
+                
+                img.setAttribute("src", imgUrl);
             }
-            
-            img.setAttribute("src", imgUrl);
-        }
-        // for history page
-        else if (src.indexOf("dull-blue-circle.png") > -1) {
-            imgUrl = chrome.extension.getURL("images/16x16/green.png");
-            img.setAttribute("src", imgUrl);
+            // for history page
+            else if (src.indexOf("dull-blue-circle.png") > -1) {
+                imgUrl = chrome.extension.getURL("images/16x16/green.png");
+                img.setAttribute("src", imgUrl);
+            }
         }
     }
 }
